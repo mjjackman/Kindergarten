@@ -1,0 +1,5 @@
+<% form_for @toddler, url_for(:toddlers, :update, :id => @toddler.id), method: 'PUT' do |f| %>
+
+	<%= partial 'toddlers/fields', :objects => @toddler, :locals => {:f => f} %>
+
+<% end %>

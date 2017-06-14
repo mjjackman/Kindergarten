@@ -1,0 +1,36 @@
+<h1>Little Ones</h1>
+
+<table>
+	<tr>
+		<th>
+			Name
+		</th>
+		<th>
+			Parent
+		</th>
+		<th>
+			Teacher
+		</th>
+		<th>
+			Group
+		</th>
+	</tr>
+	<% @toddlers.each do |t| %>
+	<tr> 
+		<td>
+			<%= t.name %>
+		</td>
+		<td>
+			<%= t.parent %>
+		</td>
+		<td>
+			<%= t.group.teacher unless t.group.nil? %>
+		</td>
+		<td>
+			<%= t.group.name unless t.group.nil? %>
+		</td>
+
+	</tr>
+	<% end %>
+
+</table>

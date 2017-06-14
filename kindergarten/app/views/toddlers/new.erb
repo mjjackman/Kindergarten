@@ -1,0 +1,7 @@
+<%= flash[:message] %>
+
+<% form_for @toddler, url_for(:toddlers, :create), method: 'POST' do |f| %>
+
+	<%= partial 'toddlers/fields', :objects => @toddler, :locals => {:f => f} %>
+
+<% end %>
