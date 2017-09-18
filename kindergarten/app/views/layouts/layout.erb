@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <title>Kindergarden</title>
+  <%= stylesheet_link_tag 'application' %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</header>
+  <body>
+    <nav>
+     <%= image_tag 'nursery_logo.png', :class => 'logo' %>
+        <ul>
+          <li class="current-menu-item"><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Class</a>
+            <ul>
+              <li><a href="#">Butterfly Room</a><li>
+              <li><a href="#">Ladybird Room</a></li>
+              <li><a href="#">Daisy Room</a><li>
+            </ul>
+          </li>
+          <li><a href="">Logout</a></li>
+        </ul>
+    </nav>
+
+<%= yield %>
+
+<footer>
+  <p> &copy; Copyright ....</p>
+  <i class="fa fa-facebook" aria-hidden="true"></i>
+
+</footer>
+</body>
+</html>
